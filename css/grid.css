@@ -1,0 +1,40 @@
+.contenedor_padre {
+    width: 100rem;
+    height: 70rem;
+    border: 3px solid black;
+
+    margin: auto;
+
+    /*Declaración de alineación con la propiedad Grid*/
+    display: grid;
+    /*declaración de columnas en Grid*/
+    grid-template-columns: 
+    9.5rem repeat(18,5rem); /*repeat repite una sola unidad las veces pedidas*/
+
+    /*declaración de filas con Grid*/
+    grid-template-rows: repeat(6,10rem);
+}
+
+.items {
+    border: 1px solid #fff;
+    background-color: rgb(74, 74, 228);   
+    color: #fff;
+    font-size: 5rem;
+}
+
+.a {background-color: rgb(233, 54, 54);
+
+    /*coordenada*/ 
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 8;}
+
+.b { 
+    background-color: rgb(233, 54, 54);
+
+    grid-column-start: 7;
+    grid-column-end: 14;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
